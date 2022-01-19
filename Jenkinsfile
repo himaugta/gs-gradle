@@ -26,9 +26,9 @@ pipeline {
 
 	}
 
-	post {
-		changed {
-			script {
+	//post {
+	//	changed {
+	//		script {
 				//slackSend(
 				//		color: (currentBuild.currentResult == 'SUCCESS') ? 'good' : 'danger',
 				//		channel: '#sagan-content',
@@ -38,7 +38,7 @@ pipeline {
 				//		mimeType: 'text/html',
 				//		recipientProviders: [[$class: 'CulpritsRecipientProvider'], [$class: 'RequesterRecipientProvider']],
 				//		body: "<a href=\"${env.BUILD_URL}\">${currentBuild.fullDisplayName} is reported as ${currentBuild.currentResult}</a>")
-			}
-		}
-	}
+	//		}
+	//	}
+	//}
 }
